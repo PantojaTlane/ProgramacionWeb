@@ -554,9 +554,8 @@ header ul li:hover{
 }
 #mapa{
     width: 100%;
-    height: 450px;
-    margin-bottom: 1rem;
-    overflow: hidden;
+    height: 500px;
+    padding-bottom: 4rem;
 }
 #title-map i{
     color: #F56040;
