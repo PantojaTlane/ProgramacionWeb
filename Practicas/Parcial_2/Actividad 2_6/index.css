@@ -1,0 +1,589 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+body{
+    background-color: rgb(226, 240, 253);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-image: url('./img/header.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+header #capa{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#titles{
+    z-index: 1;
+}
+#titles h2{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: 3rem;
+}
+header #major{
+    background-color: rgb(104, 0, 202);
+    padding: 1rem;
+    color: white;
+    border: none;
+    text-decoration: none;
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 1rem;
+    animation-name: botar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode:forwards;
+    animation-play-state: running;
+}
+
+
+@keyframes botar {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+#indice{
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+}
+#indice ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#indice ul li{
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    transition: all ease-in 0.3s;
+}
+#indice ul li:first-child{
+    background-color: rgb(104, 0, 202); 
+}
+#indice ul li a{
+    text-decoration: none;
+    color: #494949;
+    transition: all ease-in 0.3s;
+}
+#indice ul li:hover{
+    background-color: rgb(104, 0, 202);
+}
+#indice ul li:hover a{
+    color: white;
+}
+
+.dark{
+    background-color: #1b1b1b;
+}
+.clear{
+    background-color: rgb(104, 0, 202);
+}
+
+#backBtn{
+    color: white;
+    padding: 0.5rem 0.6rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+
+
+
+#data{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    background-color: white;
+    padding: 1rem;
+    color: #494949;
+    border-left: 5px solid white;
+    transition: all ease-in 0.2s;
+    position: relative;
+}
+#data:hover{
+    transform: scale(1.02);
+    border-left: 5px solid rgb(104, 0, 202);
+}
+#data-personal{
+    display: flex;
+    align-items: center;
+}
+#img-profile{
+    width: 100px;
+    height: 100px;
+    background-image: url('./img/foto.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+#data-personal > dl{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#data-personal > dl > dt{
+    margin-left: 2rem;
+}
+#data-personal > dl > dt > span{
+    color: rgb(104, 0, 202);
+    font-weight: 900;
+}
+#data-personal > dl > dt > i{
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+#data-personal > dl > dt > img{
+    margin-right: 0.5rem;
+}
+#emailIcon{
+    width: 20px;
+    height: 20px;
+}
+#email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-location-dot{
+    color: #FF1E00;
+}
+.fa-phone{
+    color: #2B4865;
+}
+
+
+
+
+
+#academica {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    color: #494949;
+    margin-top: 4rem;
+    position: relative;
+    padding: 4rem 0;
+    border-right: 5px solid white;
+    transition: all ease-in 0.2s;
+}
+#academica:hover{
+    transform: scale(1.02);
+    border-right: 5px solid rgb(104, 0, 202);
+}
+.fa-graduation-cap{
+    font-size: 5rem;
+    margin-top: 1.5rem;
+}
+#tipo-formacion{
+    display: flex;
+    flex-direction: row;
+}
+#tipo-formacion #escuela{
+    width: 50%;
+    margin-top: 2rem;
+}
+#tipo-formacion #cursos{
+    width: 50%;
+    margin-top: 2rem;
+}
+#tipo-formacion > div > ul{
+    list-style: none;
+    width: 100%;
+}
+#tipo-formacion > div > h2{
+    text-align: left;
+    margin: 3.6rem;
+}
+#tipo-formacion > div > ul > li{
+    margin: 1rem;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    transition: all ease-in 0.3s;
+}
+#tipo-formacion > div > ul > li:hover{
+    transform: scale(1.04);
+}
+#tipo-formacion > div > ul > li:nth-child(even){
+    background-color: rgb(104, 0, 202);
+    color: white;
+}
+#tipo-formacion > div > ul > li:nth-child(odd){
+    background-color: #ececec;
+}
+
+
+
+
+#experiencia{
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 4rem;
+    padding: 3rem 0 0.5rem 0;
+    position: relative;
+    text-align: center;
+    color: #494949;
+    transition: all ease-in 0.2s;
+    background-image: url('./img/laboral.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#experiencia:hover{
+    transform: scale(1.02);
+}
+#experiencia h2{
+    position: relative;
+    z-index: 3;
+    background-color: white;
+    display: inline;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+#capa-exp{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#empresas{
+    width: 100%;
+    margin-top: 2rem;
+}
+#empresas ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+}
+#empresas ol li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    width: 50%;
+    background-color: white;
+    position: relative;
+    margin: 1rem 0.5rem 0 0.5rem;
+}
+#empresas ol li img{
+    width: 80px;
+    height: 80px;
+}
+#empresas ol li i{
+    font-size: 1.5rem;
+}
+.fa-plus{
+    color: white;
+    background-color: rgb(104, 0, 202);
+    padding: 0.5rem 0.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fa-plus:hover{
+    background-color: rgb(124, 27, 216);
+}
+.description-job{
+    width: 50%;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    text-align: justify;
+}
+.hide-job{
+    transform: translateY(-100%);
+}
+#microsoft{
+    position: relative;
+    z-index: -1;
+    transition: all ease-in 0.3s;
+}
+#amd{
+    position: relative;
+    z-index: -1;
+    transition: all ease-in 0.3s;
+}
+#google{
+    position: relative;
+    z-index: -1;
+    transition: all ease-in 0.3s;
+}
+
+
+
+#otros-datos{
+    width: 90%;
+    margin: auto;
+    color: #494949;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    transition: all ease-in 0.2s;
+    border-left: 5px solid white;
+    position: relative;
+}
+#otros-datos h2{
+    margin-bottom: 1rem;
+}
+#otros-datos:hover{
+    transform: scale(1.02);
+    border-left: 5px solid rgb(104, 0, 202);
+}
+#pagina-facebook aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#pagina-facebook aside iframe{
+    border-radius: 1rem;
+}
+#pagina-facebook aside p{
+    margin-right: 10rem;
+    font-size: 2rem;
+}
+#pagina-facebook aside p span{
+    color: rgb(104, 0, 202);
+}
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #1b1b1b;
+}
+footer p{
+    color: white;
+    font-size: 1.2rem;
+}
+footer #social-media{
+    display: flex;
+    flex-direction: row;
+}
+footer #social-media a{
+    margin-right: 2rem;
+}
+footer #social-media a img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+@media screen and (max-width: 1112px){
+    #data-personal{
+        font-size: 0.7rem;
+    }
+    #empresas ol li{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 886px){
+    #indice ul li{
+        font-size: 0.7rem;
+    }
+    #escuela, #cursos ul li{
+        font-size: 0.7rem;
+    }
+    #pagina-facebook aside p{
+        margin-right: 0rem;
+        font-size: 1.2rem;
+    }
+    #empresas ol li img {
+        width: 50px;
+        height: 50px;
+      }
+}
+@media screen and (max-width: 846px){
+    #data-personal{
+        flex-direction: column;
+    }
+    #img-profile{
+        margin-top: 2rem;
+    }
+    #data-personal > dl{
+        flex-direction: column;
+    }
+    #data-personal > dl > dt{
+        margin-left: 0;
+        margin-top: 2rem;
+        background-color: #ececec;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+    }
+    #tipo-formacion > div > h2{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 648px){
+    .description-job{
+        font-size: 0.7rem;
+    }
+    #empresas ol li span{
+        padding: 0.3rem;
+    }
+    #empresas ol li span i{
+        font-size: 0.6rem;
+    }
+    #pagina-facebook aside{
+        flex-direction: column;
+    }
+    #pagina-facebook aside p{
+        padding: 0.5rem;
+        background-color: #ececec;
+        border-radius: 0.3rem;
+        margin-top: 1rem;
+    }
+    #titles h2{
+        font-size: 1rem;
+    }
+    header #major{
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    #indice ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    #indice ul li{
+        width: 50%;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    #tipo-formacion{
+        flex-direction: column;
+        align-items: center;
+    }
+    #tipo-formacion > div > h2{
+        text-align: center;
+    }
+    #tipo-formacion #escuela{
+        width: 80%;
+    }
+    #tipo-formacion #cursos{
+        width: 80%;
+    }
+    #empresas ol li{
+        width: 80%;
+    }
+    .description-job{
+        width: 80%;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+    footer #social-media a img{
+        width: 30px;
+        height: 30px;
+    }
+    #pagina-facebook aside iframe{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #tipo-formacion #escuela{
+        width: 100%;
+        font-size: 0.5rem;
+    }
+    #tipo-formacion > div > ul > li{
+        text-align: center;
+    }
+    #cursos ul li p{
+        font-size: 0.5rem;
+    }
+    #empresas ol li{
+        font-size: 0.5rem;
+    }
+    .fa-business-time{
+        display: none !important;
+    }
+    #pagina-facebook aside p{
+        font-size: 0.5rem;
+    }
+    #txtTitle{
+        font-size: 0.6rem !important;
+        letter-spacing: 0.1rem !important;
+    }
+    #major{
+        font-size: 0.6rem !important;
+    }
+    h2{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 360px){
+    #backBtn{
+        font-size: 0.6rem;
+    }
+    #contactame p{
+        display: none;
+    }
+    #social-media{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 310px){
+    
+}

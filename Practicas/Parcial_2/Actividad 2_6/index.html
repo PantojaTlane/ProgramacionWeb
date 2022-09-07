@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div id="capa"></div>
+      <aside id="titles">
+        <h2 id="txtTitle"></h2>
+      </aside>
+      <button id="major">Software Engineer</button>
+    </header>
+
+    <nav id="indice">
+      <ul>
+        <li><a href="#data" style="color: #fff">DatosPersonales</a></li>
+        <li><a href="#academica">Formación academica</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#otros-datos">Otros datos</a></li>
+        <li><a href="#contactame">Contactame</a></li>
+      </ul>
+    </nav>
+
+    <section id="data">
+      <h2>Datos Personales</h2>
+      <aside id="data-personal">
+        <div id="img-profile"></div>
+        <dl>
+          <dt>Daniel <span>T</span>lanepantla <span>P</span>antoja</dt>
+          <dt>
+            <i class="fa-solid fa-location-dot"></i>Ixmiquilpan Hidalgo Mexico
+          </dt>
+          <dt><i class="fa-solid fa-phone"></i>7721257773</dt>
+          <dt id="email">
+            <img
+              src="./img/google.svg"
+              alt="google"
+              id="emailIcon"
+            />tl419411@uaeh.edu.mx
+          </dt>
+        </dl>
+      </aside>
+      <a href="#header" id="backBtn" class="dark"><i class="fa-solid fa-rotate-left"></i></a>
+    </section>
+
+    <section id="academica">
+      <h2>Formacion academica</h2>
+      <i class="fa-solid fa-graduation-cap"></i>
+      <div id="tipo-formacion">
+        <div id="escuela">
+          <h2>Escuela</h2>
+          <ul>
+            <li>
+              <p>UAEH Universidad Autonoma del Estado de Hidalgo</p>
+            </li>
+            <li>
+              <p>Colegio de Bachilleres del Estado de Hidalgo</p>
+            </li>
+          </ul>
+        </div>
+        <div id="cursos">
+          <h2>Cursos Extracurriculares</h2>
+          <ul>
+            <li>
+              <p>Ingles B1 - Intermediate</p>
+            </li>
+            <li>
+              <p>Introduccion a la ciberseguridad</p>
+            </li>
+            <li>
+              <p>Curso de Front End Developer</p>
+            </li>
+            <li>
+              <p>Curso Backend con PHP</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#header" id="backBtn" class="dark"><i class="fa-solid fa-rotate-left"></i></a>
+    </section>
+
+    <section id="experiencia">
+      <h2>
+        Experiencia Laboral
+        <i class="fa-regular fa-star" style="color: rgb(78, 78, 233)"></i>
+      </h2>
+      <div id="capa-exp"></div>
+      <div id="empresas">
+        <ol>
+          <li>
+            <img src="./img/microsoft-icon.svg" alt="microsoft-icon" />Microsoft
+            USA - Seattle USA <i class="fa-solid fa-business-time"></i
+            ><b>2018 - Now</b
+            ><span><i class="btn-microsoft fa-solid fa-plus"></i></span>
+          </li>
+          <div id="microsoft" class="description-job hide-job">
+            <p>
+              Trabaje como Data Scientis en los datos que recaba Microsoft para
+              la optimizacion de sistemas
+            </p>
+          </div>
+          <li>
+            <img src="./img/amd.svg" alt="microsoft-icon" />Microsoft USA -
+            Seattle USA <i class="fa-solid fa-business-time"></i
+            ><b>2016 - 2017</b
+            ><span><i class="btn-amd fa-solid fa-plus"></i></span>
+          </li>
+          <div id="amd" class="description-job hide-job">
+            <p>Colabore en el diseño de nuevos procesadores AMD Ryzen 5</p>
+          </div>
+          <li>
+            <img src="./img/google.svg" alt="goole" />Google Mexico - Mexico
+            City MX <i class="fa-solid fa-business-time"></i><b>2010 - 2014</b
+            ><span><i class="btn-google fa-solid fa-plus"></i></span>
+          </li>
+          <div id="google" class="description-job hide-job">
+            <p>
+              Trabaje como Backend Engineer en el desarrollo de sistemas web
+            </p>
+          </div>
+        </ol>
+      </div>
+      <a href="#header" id="backBtn" class="clear"><i class="fa-solid fa-rotate-left"></i></a>
+    </section>
+
+    <section id="otros-datos">
+      <h2>Otros datos</h2>
+      <div id="pagina-facebook">
+        <aside>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D317524312381462%26id%3D317518795715347&show_text=true&width=500"
+            width="440"
+            height="430"
+            style="border: 0; overflow: hidden"
+            border:="0"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <p>Visita mi <span>Página</span> de <span>Facebook</span></p>
+        </aside>
+      </div>
+      <a href="#header" id="backBtn" class="dark"><i class="fa-solid fa-rotate-left"></i></a>
+    </section>
+
+
+    <footer id="contactame">
+        <p>Contactame en mis redes sociales</p>
+        <div id="social-media">
+            <a href="https://www.facebook.com/daniel.tlanepantlapantoja.58" target="_blank"><img src="./img/facebook.svg" alt="facebook"></a>
+            <a href="https://www.linkedin.com/in/daniel-tlanepantla-pantoja-b709aa1b1/" target="_blank"><img src="./img/linkedin-icon.svg" alt="linkedin-icon"></a>
+            <a href="https://www.youtube.com/channel/UCCxyy40iI7HHqpdWEtIkInA" target="_blank"><img src="./img/youtube-icon.svg" alt="youtube-icon"></a>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eee10799b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
