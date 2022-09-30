@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navegacion.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/introduccion.css" />
+    <link rel="stylesheet" href="./css/mapa.css" />
+    <link rel="stylesheet" href="./css/pueblosMagicosDescripcion.css" />
+    <link rel="stylesheet" href="./css/balneariosMagicosDescripcion.css" />
+    <link rel="stylesheet" href="./css/carrouselImagenes.css" />
+    <link rel="stylesheet" href="./css/otrosLugaresDescripcion.css" />
+    <link rel="stylesheet" href="./css/acerca.css" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+    <link rel="icon" href="" />
+    <title>Pueblos Magicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="nav-mobil" class="hide-menu-hamburguer">
+      <ul>
+        <li><a href="#pueblos-magicos-descripcion">Pueblos mágicos</a></li>
+        <li><a href="#balnearios-magicos-descripcion">Parques acuáticos</a></li>
+        <li><a href="#otros-lugares-descripcion">Otros lugares</a></li>
+        <li><a href="#acerca-nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </section>
+
+    <a href="#home" id="btnInicio">
+      <i class="fa-sharp fa-solid fa-arrow-up"></i>
+    </a>
+
+    <nav id="navegacion">
+      <div id="btn-hamburguer"><i class="fa-sharp fa-solid fa-bars"></i></div>
+      <ul>
+        <li><a href="#pueblos-magicos-descripcion">Pueblos mágicos</a></li>
+        <li><a href="#balnearios-magicos-descripcion">Parques acuáticos</a></li>
+        <li><a href="#otros-lugares-descripcion">Otros lugares</a></li>
+        <li><a href="#acerca-nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div id="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="search"
+          name="searchPlace"
+          id="searchPlace"
+          placeholder="Buscar lugar"
+        />
+        <div id="resultados-search" class="hide-cont-search"></div>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div id="capa"></div>
+      <p id="txtTitle">Hidalgo</p>
+      <div id="clima"></div>
+    </header>
+
+    <section id="introduccion" class="hide-left">
+      <h1>Conoce Hidalgo</h1>
+
+      <aside id="estructura">
+        <p>
+          Hidalgo, oficialmente Estado Libre y Soberano de Hidalgo, es uno de
+          los treinta y dos estados que conforman México. Su capital y ciudad
+          más poblada es Pachuca de Soto. Está dividido en ochenta y cuatro
+          municipios.
+        </p>
+        <div id="image-estructura">
+          <div id="escudo-hgo"></div>
+          <b>Escudo oficial del Estado Libre y Soberano de Hidalgo.</b>
+        </div>
+      </aside>
+    </section>
+
+    <section id="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d956696.7695558931!2d-99.2828695510891!3d20.502259489269548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d10a0422ce2fe7%3A0x8152c5bf7940781b!2sHidalgo%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2slt!4v1663225387173!5m2!1ses-419!2slt"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        id="frame-mapa"
+        class="hide-right"
+      ></iframe>
+    </section>
+
+    <section id="pueblos-magicos-descripcion" class="hide-left">
+      <h1>Pueblos Mágicos de Hidalgo</h1>
+      <p>
+        El Estado de Hidalgo es uno de los que cuenta con mayor cantidad de
+        pueblos mágicos, seis en total: Huasca de Ocampo, Real del Monte,
+        Mineral del Chico, Huichapan, Tecozautla, Zempoala y Zimapán. De hecho,
+        Huasca de Ocampo fue en 2001 el primer pueblo de todo el país en recibir
+        esta designación. ¿Qué significa esto de “pueblos mágicos”? Es una
+        distinción que otorga la Secretaría de Turismo de México a distintos
+        lugares que se destacan por su tradición, cultura, arquitectura e
+        historia, buscando preservar estas características y promover el
+        turismo.
+      </p>
+    </section>
+
+    <section id="mapa-lugar" class="hide-mapa-lugar"></section>
+
+    <section id="pueblos-magicos-imagenes">
+      <div id="pueblos" class="hide-right"></div>
+    </section>
+
+    <section id="conocer-pueblos">
+      <a href="./huasca/index.html">Huasca</a>
+    </section>
+
+    <section id="balnearios-magicos-descripcion" class="hide-left">
+      <h1>Balnearios en Hidalgo</h1>
+      <p>
+        En Hidalgo tambien podemos encontrar una variedad de parques acuaticos,
+        todos aptos para la familia, puedes divertirte deslizandote por una gran
+        variedad de toboganes, ejercitarte en grandes picinas o simplemente
+        relajarte con aguas termales
+      </p>
+    </section>
+
+    <section id="balnearios-imagenes">
+      <div id="balnearios" class="hide-right"></div>
+    </section>
+
+    <section id="conocer-balnearios">
+      <a href="./Tephe/index.html">Tephe</a>
+    </section>
+
+    <section id="otros-lugares-descripcion" class="hide-left">
+      <h1>Otros Lugares</h1>
+      <p>
+        Además de los pueblos mágicos y los balnearios, también puedes conocer
+        lugares como restaurantes importantes, grutas en las que sumergirte a
+        conocer la naturaleza de éstas cuevas, museos tanto históricos como
+        interactivos para conocer de la cultura del lugar o apreciar obras de
+        arte, incluso la ciencia, Zonas arqueológicas y mucho más. Recuerda que
+        todo lugar nos entrega información sobre nuestro pasado y actualidad ,
+        que no es posible obtener de otra forma. Unos destacan por su belleza o
+        incluso por las experiencias inolvidables que te dejan como visitante.
+      </p>
+    </section>
+
+    <section class="Carousel">
+      <section class="slick-list" id="slick-list">
+        <button
+          class="slick-arrow slick-prev"
+          id="button-prev"
+          data-button="button-prev"
+          onclick="app.processingButton(event)"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-left"
+            class="svg-inline--fa fa-chevron-left fa-w-10"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+            ></path>
+          </svg>
+        </button>
+        <section class="slick-track" id="track">
+          <section class="slick">
+            <div class="titulo-slick">
+              <h4>
+                <small>Grutas de Xoxafi</small>
+                <a href="./grutasxoxafi/index.html" class="ver-mas-carrousel"
+                  >Conocer</a
+                >
+              </h4>
+            </div>
+            <section>
+              <picture>
+                <img src="./img/Xoxafi.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Dinoparque en el Museo del Rehilete</small></h4>
+              <picture>
+                <img src="./img/Dino.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Bife Sports Grill-Bar</small></h4>
+              <picture>
+                <img src="./img/Bife.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Barranca de Metztitlán</small></h4>
+              <picture>
+                <img src="./img/Barranca.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Tuzoofari</small></h4>
+              <picture>
+                <img src="./img/Tuzoofari.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Zona arqueológica de Tula</small></h4>
+              <picture>
+                <img src="./img/Tula.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4>
+                <small>Museo de Medicina Laboral Nicolas Zavala</small>
+              </h4>
+              <picture>
+                <img src="./img/Medicina.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Grutas de Tolantongo</small></h4>
+              <picture>
+                <img src="./img/Grutas.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Museo miniaturas castillo de Dragones</small></h4>
+              <picture>
+                <img src="./img/DragonCastell.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Los Frailes</small></h4>
+              <picture>
+                <img src="./img/Frailes.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+          <section class="slick">
+            <section>
+              <h4><small>Mundo Fútbol</small></h4>
+              <picture>
+                <img src="./img/Futbol.png" alt="Image" />
+              </picture>
+            </section>
+          </section>
+        </section>
+        <button
+          class="slick-arrow slick-next"
+          id="button-next"
+          data-button="button-next"
+          onclick="app.processingButton(event)"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-right"
+            class="svg-inline--fa fa-chevron-right fa-w-10"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+          >
+            <path
+              fill="currentColor"
+              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+            ></path>
+          </svg>
+        </button>
+      </section>
+    </section>
+
+    <section id="acerca-nosotros" class="acerca">
+      <section class="inf">
+        <h1>Acerca de nosotros</h1>
+        <p>
+          Somos un equipo dirigido al desarrollo de software. Trabajando en la
+          iniciativa de ésta página web para compartir información sobre lugares
+          del Estado de Hidalgo que toda persona debería visitar como turista.
+          Nuestro objetivo es que tanto las personas Hidalguenses como
+          extranjeros sepan y reconozcan los diferentes lugares a los que
+          podrían ir para vivir diferentes e inolvidables experiencias en
+          Hidalgo.
+        </p>
+      </section>
+
+      <section class="logo">
+        <img src="./img/Logo.png" width="240" height="240" />
+      </section>
+    </section>
+
+    <footer>
+      <section id="contacto">
+        <section class="contacto">
+          <section class="contact">
+            <h1>Contacto</h1>
+            <ul class="Social">
+              <li>
+                <a href="/" target="_blank"><img src="./img/Face.png" /></a>
+              </li>
+              <!--Face-->
+              <li>
+                <a href="/" target="_blank"
+                  ><img src="./img/Instagram.png"
+                /></a>
+              </li>
+              <!--Insta-->
+              <li>
+                <a href="/" target="_blank"><img src="./img/GitHub.png" /></a>
+              </li>
+              <!--GitHub-->
+              <li>
+                <a href="/" target="_blank"><img src="./img/Youtube.png" /></a>
+              </li>
+              <!--Youtube-->
+              <li>
+                <a href="/" target="_blank"><img src="./img/WhatsApp.png" /></a>
+              </li>
+              <!--WhatsApp-->
+            </ul>
+          </section>
+          <section class="formulario">
+            <form action="#">
+              <section class="form">
+                <h2>Danos un toque para más información</h2>
+                <h5>
+                  Regístrate y disfruta de más imformación acerca de los lugares
+                  que te ofrecemos visitar en Hidalgo, introduce tus datos y
+                  conócelos:
+                </h5>
+
+                <section class="grupo">
+                  <input type="text" name="" id="" required /><span
+                    class="barra"
+                  ></span>
+                  <label>Nombre</label>
+                </section>
+
+                <section class="grupo">
+                  <input type="email" name="" id="" required /><span
+                    class="barra"
+                  ></span>
+                  <label>Email</label>
+                </section>
+
+                <section class="grupo">
+                  <input type="text" name="" id="" required /><span
+                    class="barra"
+                  ></span>
+                  <label>Teléfono</label>
+                </section>
+
+                <section class="grupo">
+                  <input type="text" name="" id="" required /><span
+                    class="barra"
+                  ></span>
+                  <label>Estado</label>
+                </section>
+
+                <button type="submit">Enviar</button>
+              </section>
+            </form>
+          </section>
+        </section>
+
+        <section class="copyright">
+          ©2022 Developers DAY | Derechos reservados
+        </section>
+      </section>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/eee10799b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/credentials.js"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/introduccion.js"></script>
+    <script src="./scripts/mapa.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/clima.js"></script>
+    <script src="./scripts/pueblosMagicosDescripcion.js"></script>
+    <script src="./scripts/balneariosMagicosDescripcion.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/carrousel.js"></script>
+    <script src="./scripts/otrosLugaresDescripcion.js"></script>
+    <script src="./scripts/acercaNosotros.js"></script>
+  </body>
+</html>
